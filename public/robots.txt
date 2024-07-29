@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jrlombardo.com
+
+# Sitemaps
+Sitemap: https://jrlombardo.com/sitemap.xml
