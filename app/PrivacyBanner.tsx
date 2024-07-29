@@ -24,14 +24,14 @@ const PrivacyBanner = () => {
 
 	return (
 		<Slide direction="bottom" in={isOpen} style={{ zIndex: 10 }}>
-			<Box flexDirection="row" p="40px" color="white" mt="4" bg="brand.900" rounded="md" shadow="md">
+			<Box flexDirection="row" p="40px" color="white" mt="4" bg="secondary.600" rounded="md" shadow="md">
 				<Text mb={5}>
 					This website uses cookies to improve your experience. We will assume you accept this policy as long as you are using this website.
 				</Text>
-				<Button mx={10} onClick={handleAcceptCookies}>
+				<Button mx={10} variant="callToAction" onClick={handleAcceptCookies}>
 					Accept Cookies
 				</Button>
-				<Button as={NextLink} href="/privacy-policy">
+				<Button as={NextLink} variant="callToAction" href="/privacy-policy">
 					Privacy Policy
 				</Button>
 			</Box>

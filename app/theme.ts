@@ -201,6 +201,12 @@ const buttonLink = {
 						transition: "width 0.3s ease-out",
 					},
 				},
+				callToAction: {
+					backgroundColor: "secondary.400",
+					_hover: {
+						backgroundColor: "secondary.500",
+					},
+				},
 				inline: {
 					fontSize: "md",
 					position: "relative",
