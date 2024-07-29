@@ -6,7 +6,7 @@ const Navbar = () => {
 		<Box bg="gray.100" px={40} py={2} boxShadow="lg" as="nav" position="fixed" width="100%" zIndex="10">
 			<Flex align="center">
 				<NextLink href="/" passHref legacyBehavior>
-					<Link fontWeight="bold" fontSize="xl">
+					<Link variant="linkNav" fontWeight="bold" fontSize="xl">
 						J.R. Lombardo, LCSW
 					</Link>
 				</NextLink>

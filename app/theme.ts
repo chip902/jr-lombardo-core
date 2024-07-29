@@ -5,9 +5,9 @@ import { extendTheme } from "@chakra-ui/react";
 
 const fontConfig = {
 	fonts: {
-		heading: "var(--font-roboto), sans-serif",
-		body: "var(--font-roboto), sans-serif",
-		main: "var(--font-roboto)",
+		heading: "var(--font-raleway), sans-serif",
+		body: "var(--font-raleway), sans-serif",
+		main: "var(--font-raleway)",
 		mono: "Menlo, monospace",
 	},
 	fontSizes: {
@@ -67,26 +67,56 @@ const extension = {
 	styles: {
 		global: {
 			body: {
-				fontFamily: "var(--font-roboto)",
+				fontFamily: "var(--font-raleway)",
 			},
 		},
 		variants: {
 			nav: {
 				backgroundColor: "#000000",
+				color: "#006400",
 			},
 		},
 	},
 	colors: {
-		brand: {
-			100: "#cc7152",
-			200: "#03131e",
-			300: "#0c131d",
-			400: "#38383a",
-			500: "#443c3b",
-			600: "#a2684d",
-			700: "#e0b78f",
-			800: "#02121d",
+		gray: {
+			50: "#f7fafc",
+			100: "#eeeeee",
+			200: "#e2e8f0",
+			300: "#cbd5e0",
+			400: "#a0aec0",
+			500: "#718096", // Default text color
+			600: "#4a5568",
+			700: "#2d3748",
+			800: "#1a202c",
+			900: "#171923",
 		},
+		brand: {
+			50: "#e3f2fd",
+			100: "#006400",
+			200: "#90caf9",
+			300: "#64b5f6",
+			400: "#42a5f5",
+			500: "#2196f3", // Primary button color
+			600: "#1e88e5",
+			700: "#1976d2",
+			800: "#1565c0",
+			900: "#0d47a1",
+		},
+		secondary: {
+			50: "#e8f5e9",
+			100: "#c8e6c9",
+			200: "#a5d6a7",
+			300: "#81c784",
+			400: "#66bb6a",
+			500: "#4caf50", // Secondary button color
+			600: "#006400",
+			700: "#388e3c",
+			800: "#2e7d32",
+			900: "#1b5e20",
+		},
+	},
+	radii: {
+		md: "12px", // Border radius
 	},
 };
 
@@ -94,18 +124,21 @@ const buttonLink = {
 	components: {
 		MotionHeading: {
 			baseStyle: {
-				fontFamily: "roboto",
+				color: "#006400",
+				fontFamily: "raleway",
 				textShadow: "1px 1px 2px black, 0 0 1em white",
 			},
 		},
 		Heading: {
 			baseStyle: {
-				fontFamily: "roboto",
+				color: "#006400",
+				fontFamily: "raleway",
 			},
 		},
 		Link: {
 			baseStyle: {
 				position: "relative",
+				color: "#006400",
 				textDecoration: "none",
 				_hover: {
 					textDecoration: "none",
@@ -116,6 +149,7 @@ const buttonLink = {
 					marginX: 5,
 					padding: 1,
 					fontSize: "lg",
+					color: "#006400",
 					position: "relative",
 					textDecoration: "none",
 					_hover: {
@@ -144,6 +178,7 @@ const buttonLink = {
 				linkNav: {
 					marginX: 5,
 					padding: 1,
+					color: "#006400",
 					fontSize: "lg",
 					position: "relative",
 					textDecoration: "none",
@@ -169,6 +204,7 @@ const buttonLink = {
 				inline: {
 					fontSize: "md",
 					position: "relative",
+					color: "#006400",
 					textDecoration: "none",
 					_hover: {
 						textDecoration: "none",
@@ -195,9 +231,9 @@ const buttonLink = {
 };
 
 const extendedConfig = extendTheme({
-	...extension,
 	...buttonLink,
 	...fontConfig,
+	...extension,
 	breakpoints: {
 		sm: "30em",
 		base: "48em",
@@ -207,4 +243,4 @@ const extendedConfig = extendTheme({
 	},
 });
 
-export const mrTheme = extendTheme(proTheme, extendedConfig);
+export const jrTheme = extendTheme(extendedConfig, proTheme);

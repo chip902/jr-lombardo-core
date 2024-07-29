@@ -4,25 +4,26 @@ const ProfileContainer = () => {
 	return (
 		<Container flex="1" boxShadow="2xl" py={30}>
 			<Flex direction={{ md: "column", lg: "row" }} align="center">
-				<Box boxShadow="3xl" alignItems="flex-end" justifyContent="center" flexShrink={1} mx={40} display="flex">
-					<Image src="profile-photo.jpg" alt="Profile Photo" />
-				</Box>
+				<Flex>
+					<Box boxShadow="2xl" alignItems="flex-end" justifyContent="center" flexShrink={1} mx={4} display="flex">
+						<Image boxShadow="2xl" boxSize={500} src="jr-headshot.webp" alt="Profile Photo" />
+					</Box>
+				</Flex>
 				<Box flex="1">
 					<VStack align="start" spacing={4} p={10}>
 						<Text fontSize="xl">
-							The impact of life&apos;s challenges on your mental and emotional well-being cannot be underestimated. Loneliness, depression,
-							anxiety, and grief can affect any one of us. A current life crisis or recurrent life problems of whatever magnitude can lead to
-							symptoms and poor life choices that interfere with everyday functioning and can undermine your ability to work, play, and share your
-							life with others. Each of us has the capacity to not merely cope with life&apos;s struggles but to experience a profound sense of
-							accomplishment at discovering inner resilience and strength. Psychotherapy offers the opportunity to find new and more adaptive
-							solutions and can help enhance a sense of mastery over your inner and external life.
+							J.R. Lombardo is a unique professional. He views counseling and psychotherapy as collaboration and partnership. It is an “us”
+							process not a “you” process. J.R. will work with you to deal with life and improve the way you feel, even when the cards you have
+							been dealt seem unfair or overwhelming. He can help with loneliness, uncertainty, relationship problems, and finding the right goals
+							and how to achieve them. Everyone feels at times like living is a chore. It seems that others have it easier or get all the breaks.
+							When you compare your insides to others&apos; outsides, you feel like you don&apos;t measure up.
 						</Text>
 						<Text fontSize="xl">
-							As a board-certified psychotherapist and psychoanalyst with over 30 years of experience, I strive to provide a welcoming, relaxed,
-							and safe environment where you can feel understood and accepted. I work with individuals as well as couples to increase
-							self-understanding and effectively make long-lasting changes. I also offer clinical supervision for mental health professionals who
-							seek to continue their learning. Please feel free to contact me by phone or through email. I will be happy to answer any questions
-							you have.
+							Rest assured, there is hope! It is possible to have fulfillment in life, in your career, and in your relationships. You are not
+							alone. Many people, even those who you may envy based on their outside appearances, struggle with the same problems. And if you are
+							not sure what want out of life, J.R. can help you clarify and uncover that. Please take a moment to read more about J.R., the
+							services he provides, and his method of working. Another way to determine if he is the right fit for you is to contact him. He will
+							gladly answer any questions. In most cases, speaking with him directly will give you a feel as to whether he is a good fit for you.
 						</Text>
 					</VStack>
 				</Box>

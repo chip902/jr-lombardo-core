@@ -18,12 +18,12 @@ class MyDocument extends Document {
 					<meta name="msapplication-TileColor" content="#da532c" />
 					<meta name="theme-color" content="#ffffff" />
 					<meta property="og:title" content="J.R. Lombardo, LCSW" />
-					<meta property="og:description" content="Psychotherapy, Psychoanalysis and Clinical Supervision" />
-					<meta property="og:image" content="/profile-photo.jpg" />
-					<meta property="og:url" content="https://marilynrifkin.com" />
+					<meta property="og:description" content="Psychotherapy" />
+					<meta property="og:image" content="/jr-headshot.webp" />
+					<meta property="og:url" content="https://jrlombardo.com" />
 					<meta name="twitter:card" content="summary_large_image" />
 				</Head>
-				<body className={font.roboto.variable}>
+				<body className={font.raleway.variable}>
 					<Main />
 					<NextScript />
 				</body>

@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
 					Who we are
 				</Heading>
 				<VStack>
-					<Text>Our website address is: https://marilynrifkin.com</Text>
+					<Text>Our website address is: https://jrlombardo.com</Text>
 				</VStack>
 				<Heading textTransform="uppercase" as="h2" size="lg" mb="6" mt="4">
 					WHAT DATA WE COLLECT AND WHY

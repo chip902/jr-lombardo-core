@@ -24,8 +24,8 @@ const Hero = ({ header, subHeader }: Props) => {
 			<VStack>
 				<MotionHeading
 					as="h1"
-					fontFamily="Roboto"
-					fontWeight="bold"
+					fontFamily="Raleway"
+					fontWeight="thin"
 					size="xl"
 					color="white"
 					mb={20}
@@ -37,8 +37,8 @@ const Hero = ({ header, subHeader }: Props) => {
 				{subHeader && (
 					<MotionHeading
 						as="h2"
-						fontFamily="Roboto"
-						fontWeight="bold"
+						fontFamily="Raleway"
+						fontWeight="thin"
 						size="md"
 						color="white"
 						mb={8}

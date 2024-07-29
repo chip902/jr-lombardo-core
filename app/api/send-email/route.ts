@@ -6,10 +6,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export async function POST(req: NextRequest) {
-	const frontendDomain = process.env.VERCEL_URL ? process.env.VERCEL_URL : "marilynrifkin.com";
+	const frontendDomain = process.env.VERCEL_URL ? process.env.VERCEL_URL : "jrlombardo.com";
 	const origin =
 		process.env.NODE_ENV === "production"
-			? "https://marilynrifkin.com"
+			? "https://jrlombardo.com"
 			: frontendDomain.includes("localhost")
 			? "http://localhost:3000"
 			: `https://${frontendDomain}`;
@@ -32,7 +32,7 @@ export async function POST(req: NextRequest) {
 
 	sgMail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
-	const { to = "marilyn@marilynrifkin.com", from, subject, text, html } = body;
+	const { to = "jrlombardolcsw@gmail.com", from, subject, text, html } = body;
 
 	const msg = {
 		to,

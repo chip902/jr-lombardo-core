@@ -4,7 +4,7 @@ import ProfileContainer from "./ProfileContainer";
 export default function Home() {
 	return (
 		<>
-			<Hero header="J.R. Lombardo, LCSW" subHeader="Psychotherapy and Psychoanalysis" />
+			<Hero header="J.R. Lombardo, LCSW" subHeader="Relief is real. And it can start today." />
 			<ProfileContainer />
 		</>
 	);
