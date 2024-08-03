@@ -1,9 +1,14 @@
 import { Box, Container, Heading, Text, VStack } from "@chakra-ui/react";
 import NextLink from "next/link";
 
+export const metadata = {
+	title: "Privacy Policy",
+	description: "Detailed information on the regulatory Privacy Policy.",
+};
+
 const PrivacyPolicy = () => {
 	return (
-		<Container maxW="5xl">
+		<Container mb={12} maxW="4xl">
 			<Box p="4" borderWidth="2xl" borderRadius="2xl" boxShadow="2xl">
 				<Heading mt={20} textTransform="uppercase" as="h1" size="lg" mb="6">
 					Privacy Policy

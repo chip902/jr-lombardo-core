@@ -2,6 +2,11 @@ import { VStack, Heading, Box, Text } from "@chakra-ui/react";
 import React from "react";
 import Hero from "../Hero";
 
+export const metadata = {
+	title: "About Me",
+	description: "FAQs and some other facts about me.",
+};
+
 const AboutPage = () => {
 	return (
 		<>
