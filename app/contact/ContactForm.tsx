@@ -65,7 +65,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<Box>
+		<Box width={800}>
 			<form onSubmit={handleSubmit}>
 				<VStack spacing={4}>
 					<FormControl id="name" isRequired>

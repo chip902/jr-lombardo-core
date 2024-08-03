@@ -11,8 +11,8 @@ export async function POST(req: NextRequest) {
 		process.env.NODE_ENV === "production"
 			? "https://jrlombardo.com"
 			: frontendDomain.includes("localhost")
-			? "http://localhost:3000"
-			: `https://${frontendDomain}`;
+				? "http://localhost:3000"
+				: `https://${frontendDomain}`;
 
 	const res = NextResponse.next();
 	res.headers.set("Access-Control-Allow-Origin", origin);

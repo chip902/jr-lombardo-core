@@ -7,7 +7,7 @@ const Contact = () => {
 	return (
 		<>
 			<Hero header="Contact Me" />
-			<Container maxW="2xl" centerContent>
+			<Container flex={1} centerContent>
 				<Flex align="center" mt={12} mb={12}>
 					<ContactForm />
 				</Flex>
