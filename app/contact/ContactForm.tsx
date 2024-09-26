@@ -54,13 +54,29 @@ const ContactForm = () => {
 				});
 			}
 		} catch (error) {
-			toast({
-				title: "Message send failed.",
-				description: "There was a problem and your message was not set",
-				status: "error",
-				duration: 5000,
-				isClosable: true,
-			});
+			if (error instanceof Error) {
+				toast({
+					title: "Message send failed.",
+					description: `There was a problem and your message was not sent. ${error.message}`,
+					status: "error",
+					duration: 5000,
+				});
+			} else if (typeof error === "string") {
+				toast({
+					title: "Message send failed.",
+					description: `There was a problem and your message was not sent. ${error}`,
+					status: "error",
+					duration: 5000,
+				});
+			} else {
+				// This would handle the case where error is neither an Error instance nor a string
+				toast({
+					title: "Message send failed.",
+					description: `There was a problem and your message was not sent.`,
+					status: "error",
+					duration: 5000,
+				});
+			}
 		}
 	};
 

@@ -1,12 +1,11 @@
 "use client";
 import { Box, Heading, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-
-const MotionHeading = motion(Heading);
+import React from "react";
 
 interface Props {
-	header: String;
-	subHeader?: String;
+	header: string;
+	subHeader?: string;
 }
 
 const Hero = ({ header, subHeader }: Props) => {
@@ -22,31 +21,17 @@ const Hero = ({ header, subHeader }: Props) => {
 			alignItems="flex-end"
 			pb="25vh">
 			<VStack>
-				<MotionHeading
-					as="h1"
-					fontFamily="Raleway"
-					fontWeight="thin"
-					size="xl"
-					color="white"
-					mb={20}
-					initial={{ opacity: 0 }}
-					animate={{ opacity: 1 }}
-					transition={{ duration: 2 }}>
-					{header}
-				</MotionHeading>
+				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }}>
+					<Heading as="h2" fontFamily="Raleway" fontWeight="thin" size="xl" color="white" mb={20}>
+						{header}
+					</Heading>
+				</motion.div>
 				{subHeader && (
-					<MotionHeading
-						as="h2"
-						fontFamily="Raleway"
-						fontWeight="thin"
-						size="md"
-						color="white"
-						mb={8}
-						initial={{ opacity: 0 }}
-						animate={{ opacity: 1 }}
-						transition={{ duration: 4 }}>
-						{subHeader}
-					</MotionHeading>
+					<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}>
+						<Heading as="h2" fontFamily="Raleway" fontWeight="thin" size="md" color="white" mb={8}>
+							{subHeader}
+						</Heading>
+					</motion.div>
 				)}
 			</VStack>
 		</Box>
